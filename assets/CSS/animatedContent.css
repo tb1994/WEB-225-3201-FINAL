@@ -1,0 +1,117 @@
+
+h1{
+    margin: auto;
+    font-size: 22px;
+    line-height: 1;
+    color: #0f4704;
+}
+.page{
+    width: 100vw;
+    height: 100vh;
+    min-height: 700px;
+    overflow: hidden;
+    margin-left: -25px;
+    margin-top: 45px;
+
+}
+.tabs-controls{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 50px 0 100px;
+    list-style-type: none;
+}
+.tabs-controls-link{
+    position: relative;
+    display: block;
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(13, 55, 192);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.tabs-controls-link:hover{
+   text-decoration:none;
+}
+.tabs-controls-link:after{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 0;
+    height: 4px;
+    color: rgb(13, 55, 192);
+    border-radius: 2px;
+    margin: auto;
+    content: '';
+    transition: width 0.5s;
+}
+.tabs-controls-link:hover:after{
+width: 100%;
+}
+.tabs-controls-active:after{
+    width: 100%;
+}
+.cards-container{
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    height: calc(100vh - 205px);
+    margin: 0 auto;
+}
+.card{
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    background-color: silver;
+    border: 1px solid #423e37;
+    box-shadow: 9px 11px 3px 0px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    padding: 40px;
+    transition: transform 0.3s, opacity 0.2s;
+}
+.card.hidden{
+    z-index: 100;
+    background-color: silver;
+    color: #fff;
+    opacity: 0;
+    transition: color 0.5s, background-color 0.5s, transform 1s, opacity 0.2s 0.4s;
+}
+.card.hidden h1{
+    color: #0f4704;
+    transition: color 0.5s;
+}
+
+
+.card:nth-child(1){
+    z-index: 5;
+    transform: translateX(0px) translateY(0px);
+}
+.card:nth-child(2){
+    z-index: 4;
+    transform: translateX(10px) translateY(10px);
+}
+.card:nth-child(3){
+    z-index: 3;
+    transform: translateX(20px) translateY(20px);
+}
+
+
+.card.hidden:nth-of-type(1){
+    transform: rotate(-61deg) translateX(101%) translateY(-42%) scale(0.7) skewX(3deg) skewY(5deg);
+
+}
+.card.hidden:nth-of-type(2){
+    transform: rotate(-20deg) translateX(101%) translateY(-30%) scale(0.6) skewX(3deg) skewY(12deg);
+    
+}
+.card.hidden:nth-of-type(3){
+    transform: rotate(-89deg) translateX(101%) translateY(-41%) scale(1) skewX(4deg) skewY(1deg);
+}

@@ -4,10 +4,6 @@ html, body {
   color: rgb(13, 55, 192);
 }
 
-html {
-  height: 100%;
-  display: flex;
-}
 
 body {
   margin: auto;
@@ -18,10 +14,11 @@ body {
   font-weight: 700;
   font-size: 6vw;
   font-size: calc( 100vw / var(--char-total) );
+  background-color: silver;
   position: relative;
-  padding: 0.4em 0;
+  padding: 15px;
   overflow: hidden;
-  top: -250px;
+  top: 0;
 }
 .alrazy-title:after {
   content: '';
