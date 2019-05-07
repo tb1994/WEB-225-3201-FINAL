@@ -3,7 +3,7 @@ h1{
     margin: auto;
     font-size: 22px;
     line-height: 1;
-    color: #0f4704;
+    color:  rgb(13, 55, 192);
 }
 .page{
     width: 100vw;
@@ -12,6 +12,7 @@ h1{
     overflow: hidden;
     margin-left: -25px;
     margin-top: 45px;
+    
 
 }
 .tabs-controls{
@@ -32,9 +33,12 @@ h1{
     padding: 16px 32px;
     font-size: 18px;
     font-weight: 700;
-    color: rgb(13, 55, 192);
+    color:  rgb(13, 55, 192);
     text-transform: uppercase;
     text-decoration: none;
+    border:thin solid #0f4704;
+    background-color:rgb(13, 192, 28);
+   
 }
 .tabs-controls-link:hover{
    text-decoration:none;
@@ -70,7 +74,7 @@ width: 100%;
     position: absolute;
     width: 500px;
     height: 350px;
-    background-color: silver;
+    background-color: rgb(13, 192, 28);
     border: 1px solid #423e37;
     box-shadow: 9px 11px 3px 0px rgba(0,0,0,0.2);
     box-sizing: border-box;
@@ -79,13 +83,13 @@ width: 100%;
 }
 .card.hidden{
     z-index: 100;
-    background-color: silver;
-    color: #fff;
+    background-color: rgb(13, 192, 28);
+    color:rgb(13, 55, 192);
     opacity: 0;
     transition: color 0.5s, background-color 0.5s, transform 1s, opacity 0.2s 0.4s;
 }
 .card.hidden h1{
-    color: #0f4704;
+    color: rgb(13, 55, 192);
     transition: color 0.5s;
 }
 
